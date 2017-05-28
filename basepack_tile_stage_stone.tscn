@@ -1,0 +1,1164 @@
+[gd_scene load_steps=68 format=1]
+
+[ext_resource path="res://basepack_ground_collision/stoneCenter.png" type="Texture" id=1]
+[ext_resource path="res://basepack_ground_collision/stoneLeft.png" type="Texture" id=2]
+[ext_resource path="res://basepack_ground_collision/stoneMid.png" type="Texture" id=3]
+[ext_resource path="res://basepack_ground_collision/stoneRight.png" type="Texture" id=4]
+[ext_resource path="res://basepack_ground_collision/stoneLedgeLeft.png" type="Texture" id=5]
+[ext_resource path="res://basepack_ground_collision/stoneLedgeRight.png" type="Texture" id=6]
+[ext_resource path="res://basepack_ground_collision/stoneCliffLeft.png" type="Texture" id=7]
+[ext_resource path="res://basepack_ground_collision/stoneCliffRight.png" type="Texture" id=8]
+[ext_resource path="res://basepack_ground_collision/stoneCliffLeftAlt.png" type="Texture" id=9]
+[ext_resource path="res://basepack_ground_collision/stoneCliffRightAlt.png" type="Texture" id=10]
+[ext_resource path="res://basepack_ground_collision/stoneHalf.png" type="Texture" id=11]
+[ext_resource path="res://basepack_ground_collision/stoneHalfLeft.png" type="Texture" id=12]
+[ext_resource path="res://basepack_ground_collision/stoneHalfMid.png" type="Texture" id=13]
+[ext_resource path="res://basepack_ground_collision/stoneHalfRight.png" type="Texture" id=14]
+[ext_resource path="res://basepack_ground_collision/rockHillLeft.png" type="Texture" id=15]
+[ext_resource path="res://basepack_ground_collision/rockHillRight.png" type="Texture" id=16]
+[ext_resource path="res://basepack_ground_collision/stoneHillLeft2.png" type="Texture" id=17]
+[ext_resource path="res://basepack_ground_collision/stoneHillRight2.png" type="Texture" id=18]
+[ext_resource path="res://basepack_ground_collision/box.png" type="Texture" id=19]
+[ext_resource path="res://basepack_ground_collision/boxAlt.png" type="Texture" id=20]
+[ext_resource path="res://basepack_ground_collision/stoneWall.png" type="Texture" id=21]
+[ext_resource path="res://basepack_ground_collision/stone.png" type="Texture" id=22]
+[ext_resource path="res://basepack_ground_collision/bridge.png" type="Texture" id=23]
+[ext_resource path="res://basepack_ground_collision/bridgeLogs.png" type="Texture" id=24]
+[ext_resource path="res://basepack_ground_collision/fence.png" type="Texture" id=25]
+[ext_resource path="res://basepack_ground_collision/liquidWater.png" type="Texture" id=26]
+[ext_resource path="res://basepack_ground_collision/liquidWaterTop_mid.png" type="Texture" id=27]
+[ext_resource path="res://basepack_ground_collision/sign.png" type="Texture" id=28]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30, -35, 35, -35, 35, 35, -30, 35, -35, 30, -35, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 30, -35, 35, -30, 35, 30, 30, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30, -35, 35, -35, 35, 35, 5, 30, -15, 20, -25, 15, -30, 5, -35, -5, -35, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, 35, -35, -35, 30, -35, 35, -30, 35, -10, 30, 5, 25, 15, 10, 25, -5, 30, -25, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -30, -30, -35, 35, -35, 35, 35, 0, 15, -10, 5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 35, 35, 10, 35, 0, 15 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -30, -10, 5, -25, -5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -10, -35, -30, -25, -5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 0, 15, -35, 35, -35, -35, 30, -35, 35, -30, 10, 5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 35, -30, 35, -10, 25, -5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 0, 15, -10, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 10, 5, 35, -30, 25, -5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30, -37.1892, 30, -37.1892, 35, -28.5405, 35, 23.3513, 30, 32, -30, 32, -35, 23.3513, -35, -28.5405 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 35, 5, -30, 5, -35, 0, -35, -30, -30, -35, 35, -35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 30, -35, 35, -30, 35, 0, 30, 5, -35, 5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, 35, 35, -35, 35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30, -35, 30, -35, 35, -30, 35, 30, 30, 35, -30, 35, -35, 30, -35, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -30, -35, 30, -35, 35, -30, 35, 30, 30, 35, -30, 35, -35, 30, -35, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, 15, 35, 15, 35, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, 10, 35, 10, 35, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 25, -15, 25, -25, 35, -25, 35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 35, 35, 25, 35, 25, 15 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 25, -15, 35, 35, 25, 15 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -25, -15, 25, -15, 25, 15, -25, 15 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -25, 15, -25, 35, -35, 35, -35, -25 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -25, -15, -25, 15, -35, -25 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -25, -15, -35, -25, -25, -25 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -5, -30, -5, -35, 5, -35, 5, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 5, 10, 5, 35, -5, 35, -5, 10 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -5, 10, -30, 10, -35, 5, -35, -25, -30, -30, -5, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 5, 10, -5, 10, -5, -30, 5, -30 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 30, 10, 5, 10, 5, -30, 30, -30, 35, -25, 35, 5 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, -35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, -35, 35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, -35, 35, -15, -35, -15 )
+
+[sub_resource type="ConvexPolygonShape2D" id=39]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -35, -35, 35, -35, 35, -10, -35, -10 )
+
+[node name="Node" type="Node"]
+
+[node name="stoneCenter" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneCenter"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneCenter/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 95, 0 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneLeft"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneLeft/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -35, 35, -35, 35, 35, -30, 35, -35, 30, -35, -30 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneMid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 190, 0 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneMid"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneMid/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 285, 0 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneRight"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneRight/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 30, -35, 35, -30, 35, 30, 30, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneLedgeLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 190 )
+texture = ExtResource( 5 )
+offset = Vector2( 65, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="stoneLedgeRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 95, 190 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="stoneCliffLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 380, 0 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneCliffLeft"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneCliffLeft/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -35, 35, -35, 35, 35, 5, 30, -15, 20, -25, 15, -30, 5, -35, -5, -35, -30 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneCliffRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 475, 0 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneCliffRight"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneCliffRight/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, 35, -35, -35, 30, -35, 35, -30, 35, -10, 30, 5, 25, 15, 10, 25, -5, 30, -25, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneCliffLeftAlt" type="Sprite" parent="."]
+
+transform/pos = Vector2( 570, 0 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneCliffLeftAlt"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 7 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 8 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 9 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneCliffLeftAlt/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -30, -30, -35, 35, -35, 35, 35, 10, 35, 0, 15, -10, 5, -25, -5, -35, -10 )
+shape_range = Vector2( 0, 3 )
+trigger = false
+
+[node name="stoneCliffRightAlt" type="Sprite" parent="."]
+
+transform/pos = Vector2( 665, 0 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneCliffRightAlt"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 10 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 11 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 12 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 13 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneCliffRightAlt/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 30, -35, 35, -30, 35, -10, 25, -5, 10, 5, 0, 15, -10, 35, -35, 35 )
+shape_range = Vector2( 0, 3 )
+trigger = false
+
+[node name="stoneHalfTop" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 95 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHalfTop"]
+
+transform/pos = Vector2( 0, -13.5 )
+transform/scale = Vector2( 1, 0.578125 )
+input/pickable = false
+shapes/0/shape = SubResource( 14 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHalfTop/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -37.1892, 30, -37.1892, 35, -28.5405, 35, 23.3513, 30, 32, -30, 32, -35, 23.3513, -35, -28.5405 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHalfLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 95, 95 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHalfLeft"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHalfLeft/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 35, -35, -30, -35, -35, -30, -35, 0, -30, 5, 35, 5 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHalfMid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 190, 95 )
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHalfMid"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 16 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHalfMid/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHalfRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 285, 95 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHalfRight"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 17 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHalfRight/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 30, -35, 35, -30, 35, 0, 30, 5, -35, 5 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="rockHillLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 380, 95 )
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rockHillLeft"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 18 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rockHillLeft/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, 35, 35, -35, 35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="rockHillRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 475, 95 )
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rockHillRight"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 19 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rockHillRight/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHillLeft" type="Sprite" parent="."]
+
+transform/pos = Vector2( 570, 95 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHillLeft"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHillLeft/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHillRight" type="Sprite" parent="."]
+
+transform/pos = Vector2( 665, 95 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHillRight"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHillRight/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="box" type="Sprite" parent="."]
+
+transform/pos = Vector2( 190, 190 )
+texture = ExtResource( 19 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="box"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 20 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="box/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -35, 30, -35, 35, -30, 35, 30, 30, 35, -30, 35, -35, 30, -35, -30 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="boxAlt" type="Sprite" parent="."]
+
+transform/pos = Vector2( 285, 190 )
+texture = ExtResource( 20 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="boxAlt"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 21 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="boxAlt/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -35, 30, -35, 35, -30, 35, 30, 30, 35, -30, 35, -35, 30, -35, -30 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneWall" type="Sprite" parent="."]
+
+transform/pos = Vector2( 380, 185 )
+texture = ExtResource( 21 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneWall"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 21 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneWall/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -35, 30, -35, 35, -30, 35, 30, 30, 35, -30, 35, -35, 30, -35, -30 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stone" type="Sprite" parent="."]
+
+transform/pos = Vector2( 475, 185 )
+texture = ExtResource( 22 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stone"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 21 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stone/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -30, -35, 30, -35, 35, -30, 35, 30, 30, 35, -30, 35, -35, 30, -35, -30 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="bridge" type="Sprite" parent="."]
+
+transform/pos = Vector2( 570, 190 )
+texture = ExtResource( 23 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bridge"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 22 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bridge/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, 15, 35, 15, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="bridgeLogs" type="Sprite" parent="."]
+
+transform/pos = Vector2( 665, 190 )
+texture = ExtResource( 24 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bridgeLogs"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 23 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bridgeLogs/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, 10, 35, 10, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="fence" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 285 )
+texture = ExtResource( 25 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="fence"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 24 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 25 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 26 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 27 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 28 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 29 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 30 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="fence/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 25, -15, 25, -25, 35, -25, 35, 35, 25, 35, 25, 15, -25, 15, -25, 35, -35, 35, -35, -25, -25, -25, -25, -15 )
+shape_range = Vector2( 0, 6 )
+trigger = false
+
+[node name="liquidWater" type="Sprite" parent="."]
+
+transform/pos = Vector2( 95, 285 )
+texture = ExtResource( 26 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="liquidWaterTop_mid" type="Sprite" parent="."]
+
+transform/pos = Vector2( 190, 285 )
+texture = ExtResource( 27 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="sign" type="Sprite" parent="."]
+
+transform/pos = Vector2( 285, 285 )
+texture = ExtResource( 28 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="signCollision" type="Sprite" parent="."]
+
+transform/pos = Vector2( 380, 285 )
+texture = ExtResource( 28 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="signCollision"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 31 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 32 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 33 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 34 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 35 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="signCollision/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -5, 35, 5, 35, 5, 10, 30, 10, 35, 5, 35, -25, 30, -30, 5, -30, 5, -35, -5, -35, -5, -30, -30, -30, -35, -25, -35, 5, -30, 10, -5, 10 )
+shape_range = Vector2( 0, 4 )
+trigger = false
+
+[node name="rockHillLeftFlipped" type="Sprite" parent="."]
+
+transform/pos = Vector2( 475, 285 )
+texture = ExtResource( 15 )
+flip_h = true
+flip_v = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rockHillLeftFlipped"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 36 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rockHillLeftFlipped/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="rockHillRightFlipped" type="Sprite" parent="."]
+
+transform/pos = Vector2( 570, 285 )
+texture = ExtResource( 16 )
+flip_h = true
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="rockHillRightFlipped"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 37 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rockHillRightFlipped/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHillLeftFlipped" type="Sprite" parent="."]
+
+transform/pos = Vector2( 665, 285 )
+texture = ExtResource( 17 )
+flip_h = true
+flip_v = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHillLeftFlipped"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHillLeftFlipped/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="stoneHillRightFlipped" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 380 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="stoneHillRightFlipped"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="stoneHillRightFlipped/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="bridgeFlipped" type="Sprite" parent="."]
+
+transform/pos = Vector2( 95, 380 )
+texture = ExtResource( 23 )
+flip_v = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bridgeFlipped"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 38 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bridgeFlipped/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, -15, -35, -15 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="bridgeLogsFlipped" type="Sprite" parent="."]
+
+transform/pos = Vector2( 190, 380 )
+texture = ExtResource( 24 )
+flip_v = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="bridgeLogsFlipped"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 39 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="bridgeLogsFlipped/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -35, -35, 35, -35, 35, -10, -35, -10 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+
