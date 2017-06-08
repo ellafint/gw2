@@ -258,6 +258,7 @@ config/pitch_random = 0.0
 
 [node name="Label" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 1.1, 1.1 )
 focus/ignore_mouse = true
 focus/stop_mouse = true

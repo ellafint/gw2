@@ -10,6 +10,8 @@ func _on_body_enter( body ):
 		get_node("anim").play("taken")
 		taken = true
 		print("coin taken")
+		get_node("/root/game_state").mail_score+=1
+		#print(mail_score)
 
 
 func _on_coin_area_enter(area):

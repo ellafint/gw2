@@ -57,8 +57,8 @@ color = Color( 0.85098, 1, 1, 1 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxLayer"]
 
-transform/pos = Vector2( 400, 240 )
-transform/scale = Vector2( 0.792969, 1 )
+transform/pos = Vector2( 542.769, 352.994 )
+transform/scale = Vector2( 0.930669, 1.17365 )
 texture = ExtResource( 2 )
 
 [node name="clouds" type="ParallaxLayer" parent="."]
