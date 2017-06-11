@@ -131,7 +131,7 @@ samples/shoot = {
 "sample": ExtResource( 7 )
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=16]
 
 resource/name = "label_coin_animation"
 length = 1.0
@@ -445,7 +445,7 @@ hframes = 4
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/label_coin_animation = SubResource( 18 )
+anims/label_coin_animation = SubResource( 16 )
 anims/label_enemy_animation = SubResource( 17 )
 playback/active = true
 playback/speed = 2.0
