@@ -1,19 +1,18 @@
-[gd_scene load_steps=32 format=1]
+[gd_scene load_steps=31 format=1]
 
 [ext_resource path="res://playerChibi.gd" type="Script" id=1]
-[ext_resource path="res://player/chibi-girl1.png" type="Texture" id=2]
+[ext_resource path="res://player/fox-master.png" type="Texture" id=2]
 [ext_resource path="res://bullet.png" type="Texture" id=3]
-[ext_resource path="res://player/chibi-girl2.png" type="Texture" id=4]
-[ext_resource path="res://sound_coin.wav" type="Sample" id=5]
-[ext_resource path="res://sound_jump.wav" type="Sample" id=6]
-[ext_resource path="res://sound_shoot.wav" type="Sample" id=7]
-[ext_resource path="res://osb_left.png" type="Texture" id=8]
-[ext_resource path="res://osb_right.png" type="Texture" id=9]
-[ext_resource path="res://osb_jump.png" type="Texture" id=10]
-[ext_resource path="res://osb_fire.png" type="Texture" id=11]
-[ext_resource path="res://timerScript.gd" type="Script" id=12]
-[ext_resource path="res://coin.png" type="Texture" id=13]
-[ext_resource path="res://enemy-original.png" type="Texture" id=14]
+[ext_resource path="res://sound_coin.wav" type="Sample" id=4]
+[ext_resource path="res://sound_jump.wav" type="Sample" id=5]
+[ext_resource path="res://sound_shoot.wav" type="Sample" id=6]
+[ext_resource path="res://osb_left.png" type="Texture" id=7]
+[ext_resource path="res://osb_right.png" type="Texture" id=8]
+[ext_resource path="res://osb_jump.png" type="Texture" id=9]
+[ext_resource path="res://osb_fire.png" type="Texture" id=10]
+[ext_resource path="res://timerScript.gd" type="Script" id=11]
+[ext_resource path="res://coin.png" type="Texture" id=12]
+[ext_resource path="res://enemy-original.png" type="Texture" id=13]
 
 [sub_resource type="RayShape2D" id=1]
 
@@ -53,9 +52,19 @@ step = 0.25
 
 [sub_resource type="Animation" id=7]
 
-length = 7.0
+length = 1.4
 loop = true
-step = 0.25
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite_chibi:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0.2, 0.4, 0.6, 0.8, 1, 1.2 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 9, 8, 7 ]
+}
 
 [sub_resource type="Animation" id=8]
 
@@ -65,9 +74,19 @@ step = 0.25
 
 [sub_resource type="Animation" id=9]
 
-length = 0.5
+length = 2.1
 loop = true
-step = 0.25
+step = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("sprite_chibi:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 10, 11, 12, 13, 12, 11 ]
+}
 
 [sub_resource type="Animation" id=10]
 
@@ -86,16 +105,16 @@ step = 0.25
 resource/name = "run_chibi"
 length = 2.1
 loop = true
-step = 0.1
+step = 0.3
 tracks/0/type = "value"
-tracks/0/path = NodePath("sprite_chibi:texture")
+tracks/0/path = NodePath("sprite_chibi:frame")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = {
-"times": FloatArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1 ),
-"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": FloatArray( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 4 ) ]
+"values": [ 0, 1, 2, 3, 0, 4, 5 ]
 }
 
 [sub_resource type="Animation" id=13]
@@ -116,19 +135,19 @@ samples/coin = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 5 )
+"sample": ExtResource( 4 )
 }
 samples/jump = {
 "db": 0.0,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 6 )
+"sample": ExtResource( 5 )
 }
 samples/shoot = {
 "db": -0.32,
 "pitch": 1.0,
 "priority": 0,
-"sample": ExtResource( 7 )
+"sample": ExtResource( 6 )
 }
 
 [sub_resource type="Animation" id=16]
@@ -198,6 +217,8 @@ script/script = ExtResource( 1 )
 editor/display_folded = true
 transform/scale = Vector2( 0.66, 0.66 )
 texture = ExtResource( 2 )
+hframes = 14
+frame = 7
 
 [node name="smoke" type="Particles2D" parent="sprite_chibi"]
 
@@ -323,7 +344,7 @@ scale = Vector2( 1, 1 )
 
 transform/pos = Vector2( 27.7593, 360.87 )
 transform/scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 8 )
+normal = ExtResource( 7 )
 pressed = null
 bitmask = null
 shape = null
@@ -337,7 +358,7 @@ visibility_mode = 1
 
 transform/pos = Vector2( 121.542, 361.415 )
 transform/scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 9 )
+normal = ExtResource( 8 )
 pressed = null
 bitmask = null
 shape = null
@@ -351,7 +372,7 @@ visibility_mode = 1
 
 transform/pos = Vector2( 666.224, 359.02 )
 transform/scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 10 )
+normal = ExtResource( 9 )
 pressed = null
 bitmask = null
 shape = null
@@ -365,7 +386,7 @@ visibility_mode = 1
 
 transform/pos = Vector2( 668.073, 262.788 )
 transform/scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 11 )
+normal = ExtResource( 10 )
 pressed = null
 bitmask = null
 shape = null
@@ -415,7 +436,7 @@ custom_colors/font_color = Color( 0.556989, 0.0750732, 0.800781, 1 )
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
-script/script = ExtResource( 12 )
+script/script = ExtResource( 11 )
 
 [node name="mail_counter" type="Label" parent="hud"]
 
@@ -437,7 +458,7 @@ max_lines_visible = -1
 
 transform/pos = Vector2( 1467, 110.274 )
 transform/scale = Vector2( 3, 3 )
-texture = ExtResource( 13 )
+texture = ExtResource( 12 )
 hframes = 4
 
 [node name="label_enemy_animation" type="AnimationPlayer" parent="hud"]
@@ -455,7 +476,7 @@ autoplay = "label_coin_animation"
 [node name="label_enemy" type="Sprite" parent="hud"]
 
 transform/pos = Vector2( 1467, 170.274 )
-texture = ExtResource( 14 )
+texture = ExtResource( 13 )
 hframes = 8
 frame = 3
 
