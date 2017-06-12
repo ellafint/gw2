@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=1]
 
-[ext_resource path="res://playerChibi.gd" type="Script" id=1]
+[ext_resource path="res://playerFox.gd" type="Script" id=1]
 [ext_resource path="res://player/fox-master.png" type="Texture" id=2]
 [ext_resource path="res://bullet.png" type="Texture" id=3]
 [ext_resource path="res://sound_coin.wav" type="Sample" id=4]
@@ -196,8 +196,8 @@ shapes/1/trigger = false
 collision/layers = 1
 collision/mask = 1
 mode = 2
-mass = 100.0
-friction = 0.1
+mass = 59.18
+friction = 0.2
 bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = true

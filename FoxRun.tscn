@@ -2,7 +2,7 @@
 
 [ext_resource path="res://bg_trees_tileset.xml" type="TileSet" id=1]
 [ext_resource path="res://basepack_tile_stage_stone.xml" type="TileSet" id=2]
-[ext_resource path="res://playerChibi.tscn" type="PackedScene" id=3]
+[ext_resource path="res://playerFox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://parallax_bg.tscn" type="PackedScene" id=4]
 [ext_resource path="res://one_way_platform.tscn" type="PackedScene" id=5]
 [ext_resource path="res://moving_platform.tscn" type="PackedScene" id=6]
@@ -68,9 +68,7 @@ tile_data = IntArray( 1376375, 19, 1441890, 19, 1441892, 19, 1441893, 19, 144189
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 4179.62, 2671.02 )
-mass = 59.1837
-friction = 0.2
+transform/pos = Vector2( 4082.94, 2674.08 )
 
 [node name="parallax_bg" parent="." instance=ExtResource( 4 )]
 
