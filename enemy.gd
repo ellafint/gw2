@@ -5,6 +5,7 @@ extends RigidBody2D
 const STATE_WALKING = 0
 const STATE_DYING = 1
 
+var number_EnemyLeft
 var state = STATE_WALKING
 
 var direction = -1
@@ -54,7 +55,20 @@ func _integrate_forces(s):
 					cc.disable()
 					get_node("sound").play("hit")
 					# decrement enemy counter
+					# check if number of enemies left = 0
 					get_node("/root/game_state").enemy_score-=1
+					number_EnemyLeft = get_node("/root/game_state").enemy_score
+					print("Number Enemies Left: ",number_EnemyLeft)
+					if(number_EnemyLeft==0):
+						print("No more enemies!")
+						get_node("/root/FoxRun/player/hud/game_over").show()
+						get_node("/root/FoxRun/player").stop()
+						get_node("/root/game_state").game_over()
+						
+						get_node("/root/FoxRun/player/hud/restartButton").show()
+						# stop updates to timer + game state
+						get_node("/root/FoxRun/player/hud/timer").stopTimer()
+						
 					break
 			
 			if (dp.x > 0.9):

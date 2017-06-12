@@ -279,9 +279,11 @@ func _ready():
 
 func _process(delta):
 	chibi_pos = get_node("sprite_chibi").get_global_pos()
-	
 	#print(chibi_pos)
 
+func stop():
+	set_process(false)
+	print("stopping player??")
 	
 #	if !Globals.has_singleton("Facebook"):
 #		return
@@ -291,3 +293,7 @@ func _process(delta):
 #	var msg = "I just sneezed on your wall! Beat my score and Stop the Running nose!"
 #	var title = "I just sneezed on your wall!"
 #	Facebook.post("feed", msg, title, link, icon)
+
+
+func _on_restartButton_pressed():
+	get_tree().change_scene("res://main_menu.tscn")

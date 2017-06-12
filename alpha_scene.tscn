@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://basepack_tile_stage_stone.xml" type="TileSet" id=1]
+[ext_resource path="res://playerFox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=3]
+
+[node name="alpha_scene" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 70, 70 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 0, 0, 26, 0, 65536, 0, 65562, 0, 131072, 0, 131098, 0, 196608, 0, 196634, 0, 262144, 0, 262170, 0, 327680, 0, 327681, 2, 327682, 2, 327683, 2, 327684, 2, 327685, 2, 327686, 2, 327687, 2, 327688, 2, 327689, 2, 327690, 2, 327691, 2, 327692, 2, 327693, 2, 327694, 2, 327695, 2, 327696, 2, 327697, 2, 327698, 2, 327699, 2, 327700, 2, 327701, 2, 327702, 2, 327703, 2, 327704, 2, 327705, 2, 327706, 0, 393216, 0, 393217, 0, 393218, 0, 393219, 0, 393220, 0, 393221, 0, 393222, 0, 393223, 0, 393224, 0, 393225, 0, 393226, 0, 393227, 0, 393228, 0, 393229, 0, 393230, 0, 393231, 0, 393232, 0, 393233, 0, 393234, 0, 393235, 0, 393236, 0, 393237, 0, 393238, 0, 393239, 0, 393240, 0, 393241, 0, 393242, 0 )
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 113.059, 300.193 )
+
+[node name="props" type="Node" parent="."]
+
+[node name="coin" type="Node" parent="."]
+
+[node name="coin" parent="coin" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 941.216, 289.047 )
+
+[node name="coin1" parent="coin" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1246.57, 283.495 )
+
+[node name="coin2" parent="coin" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1083.71, 231.678 )
+
+
