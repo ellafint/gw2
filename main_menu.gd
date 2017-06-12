@@ -97,3 +97,7 @@ func _on_main_left_pressed():
 
 func _on_left_right_pressed():
 	get_node("camera_movement").play("left_pan_right")
+
+
+func _on_storybutton_pressed():
+	pass # replace with function body

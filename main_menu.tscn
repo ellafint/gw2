@@ -2,14 +2,14 @@
 
 [ext_resource path="res://main_menu.gd" type="Script" id=1]
 [ext_resource path="res://bg_grasslands.png" type="Texture" id=2]
-[ext_resource path="res://background-grass-plants4.png" type="Texture" id=3]
-[ext_resource path="res://Oswald-regular-44.fnt" type="BitmapFont" id=4]
-[ext_resource path="res://images/button-play.png" type="Texture" id=5]
-[ext_resource path="res://images/button-play2.png" type="Texture" id=6]
-[ext_resource path="res://images/button-instructions.png" type="Texture" id=7]
-[ext_resource path="res://images/button-instructions2.png" type="Texture" id=8]
-[ext_resource path="res://basepack_ground_collision/signRight.png" type="Texture" id=9]
-[ext_resource path="res://basepack_ground_collision/signLeft.png" type="Texture" id=10]
+[ext_resource path="res://images/menu-left.png" type="Texture" id=3]
+[ext_resource path="res://images/menu-right.png" type="Texture" id=4]
+[ext_resource path="res://background-grass-plants4.png" type="Texture" id=5]
+[ext_resource path="res://Oswald-regular-44.fnt" type="BitmapFont" id=6]
+[ext_resource path="res://images/button-play.png" type="Texture" id=7]
+[ext_resource path="res://images/button-play2.png" type="Texture" id=8]
+[ext_resource path="res://images/button-instructions.png" type="Texture" id=9]
+[ext_resource path="res://images/button-instructions2.png" type="Texture" id=10]
 [ext_resource path="res://moving_platform.png" type="Texture" id=11]
 
 [sub_resource type="Animation" id=1]
@@ -206,20 +206,54 @@ transform/pos = Vector2( 1361.15, 306.447 )
 transform/scale = Vector2( 2.22922, 1 )
 texture = ExtResource( 2 )
 
-[node name="trees" type="Sprite" parent="main"]
+[node name="right_left" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1726.0
+margin/top = 351.0
+margin/right = 1796.0
+margin/bottom = 491.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 3 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="left_right" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 596.0
+margin/top = 347.0
+margin/right = 666.0
+margin/bottom = 487.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="trees" type="Sprite" parent="."]
 
 transform/pos = Vector2( 517.739, 223.135 )
-texture = ExtResource( 3 )
+texture = ExtResource( 5 )
 
 [node name="trees2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 1481.07, 224.39 )
-texture = ExtResource( 3 )
+texture = ExtResource( 5 )
 
 [node name="trees3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 2498.8, 228.115 )
-texture = ExtResource( 3 )
+texture = ExtResource( 5 )
 
 [node name="score" type="Label" parent="."]
 
@@ -231,7 +265,7 @@ margin/left = 985.0
 margin/top = 48.0
 margin/right = 1185.0
 margin/bottom = 101.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Best Score:"
 percent_visible = 1.0
@@ -248,7 +282,7 @@ margin/left = 988.0
 margin/top = 121.0
 margin/right = 1084.0
 margin/bottom = 171.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Time: "
 percent_visible = 1.0
@@ -261,28 +295,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 969.0
-margin/top = 290.0
-margin/right = 1096.0
-margin/bottom = 348.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-textures/normal = ExtResource( 5 )
-textures/hover = ExtResource( 6 )
-params/resize_mode = 0
-params/stretch_mode = 0
-
-[node name="rules" type="TextureButton" parent="."]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 1136.0
-margin/top = 293.0
-margin/right = 1263.0
-margin/bottom = 351.0
+margin/left = 1143.0
+margin/top = 208.0
+margin/right = 1270.0
+margin/bottom = 266.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -359,14 +375,15 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 1530.0
-margin/top = 2.0
-margin/right = 1600.0
-margin/bottom = 72.0
+margin/left = 1335.0
+margin/top = 316.0
+margin/right = 1462.0
+margin/bottom = 386.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 9 )
+textures/hover = ExtResource( 10 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
@@ -376,48 +393,15 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 809.0
-margin/top = 7.0
-margin/right = 879.0
-margin/bottom = 77.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-textures/normal = ExtResource( 10 )
-params/resize_mode = 0
-params/stretch_mode = 0
-
-[node name="right_left" type="TextureButton" parent="."]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 1703.0
-margin/top = 3.0
-margin/right = 1773.0
-margin/bottom = 73.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-textures/normal = ExtResource( 10 )
-params/resize_mode = 0
-params/stretch_mode = 0
-
-[node name="left_right" type="TextureButton" parent="."]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 572.0
-margin/top = 3.0
-margin/right = 642.0
-margin/bottom = 73.0
+margin/left = 975.0
+margin/top = 313.0
+margin/right = 1102.0
+margin/bottom = 383.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 9 )
+textures/hover = ExtResource( 10 )
 params/resize_mode = 0
 params/stretch_mode = 0
 
@@ -427,14 +411,13 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 40.0
-margin/bottom = 40.0
+margin/left = -1659.0
+margin/top = 2.0
+margin/right = -1619.0
+margin/bottom = 42.0
 
 [node name="story-1" type="Label" parent="right-menu"]
 
-visibility/opacity = 0.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -443,9 +426,10 @@ margin/left = 1726.0
 margin/top = 73.0
 margin/right = 2324.0
 margin/bottom = 126.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Once upon a time there lived a fox.."
+text = "You're a happy little fox, but someone's
+been stealing your Tazo Chai tea!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -460,10 +444,9 @@ margin/left = 1724.0
 margin/top = 73.0
 margin/right = 2292.0
 margin/bottom = 176.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "This fox had two older fox bros
-    		and 2 younger fox bros..."
+text = "Show them WHAT'S WHAT!!!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -479,9 +462,11 @@ margin/left = 1724.0
 margin/top = 73.0
 margin/right = 2345.0
 margin/bottom = 176.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Poor middle fox was always forgotten..."
+text = "Collect coins to buy more CHAI! and throw
+something at them to defeat
+the thieving, red-headed buggers!"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -492,10 +477,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 1926.0
-margin/top = 239.0
-margin/right = 2136.0
-margin/bottom = 309.0
+margin/left = 1730.0
+margin/top = 261.0
+margin/right = 1940.0
+margin/bottom = 331.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -514,9 +499,62 @@ margin/left = 26.0
 margin/top = 27.0
 margin/right = 353.0
 margin/bottom = 77.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Tell Me a Story"
+text = "Tell me a story!"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="right-screen" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+[node name="instructions" type="Label" parent="right-screen"]
+
+rect/scale = Vector2( 0.9, 0.9 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 1671.0
+margin/top = 28.0
+margin/right = 2527.0
+margin/bottom = 237.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Collect coins and defeat the baddies!
+The clock stops when there are no baddies left.
+The goal is to have the most coins
+in the fastest time."
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="controls" type="Label" parent="right-screen"]
+
+rect/scale = Vector2( 0.9, 0.9 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 1904.0
+margin/top = 242.0
+margin/right = 2385.0
+margin/bottom = 451.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0.0159454, 0.254561, 0.371094, 1 )
+text = "Move Left - A or Left Arrow
+Move Right - D or Right Arrow
+Jump - Spacebar or Up Arrow
+Attack - E"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -548,17 +586,15 @@ playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
 
-[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="right_left" to="." method="_on_right_left_pressed"]
 
-[connection signal="pressed" from="rules" to="." method="_on_rules_pressed"]
+[connection signal="pressed" from="left_right" to="." method="_on_left_right_pressed"]
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
 
 [connection signal="pressed" from="main_right" to="." method="_on_main_right_pressed"]
 
 [connection signal="pressed" from="main_left" to="." method="_on_main_left_pressed"]
-
-[connection signal="pressed" from="right_left" to="." method="_on_right_left_pressed"]
-
-[connection signal="pressed" from="left_right" to="." method="_on_left_right_pressed"]
 
 [connection signal="pressed" from="right-menu/continue-story" to="." method="_on_continuestory_pressed"]
 
