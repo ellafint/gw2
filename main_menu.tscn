@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://main_menu.gd" type="Script" id=1]
 [ext_resource path="res://bg_grasslands.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://images/button-instructions.png" type="Texture" id=9]
 [ext_resource path="res://images/button-instructions2.png" type="Texture" id=10]
 [ext_resource path="res://moving_platform.png" type="Texture" id=11]
+[ext_resource path="res://Chibi's Blue sky Menu.ogg" type="AudioStream" id=12]
 
 [sub_resource type="Animation" id=1]
 
@@ -585,6 +586,17 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+
+[node name="menu-song" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 12 )
+stream/play = false
+stream/loop = true
+stream/volume_db = 0.0
+stream/autoplay = true
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 [connection signal="pressed" from="right_left" to="." method="_on_right_left_pressed"]
 
