@@ -442,6 +442,26 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="story-4" type="Label" parent="left-screen"]
+
+visibility/opacity = 0.0
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 1724.0
+margin/top = 73.0
+margin/right = 2345.0
+margin/bottom = 176.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "You win when no carrot-topped
+nuisances remain!
+MUAHAHAHAHA!!! \\o/ !!!"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [node name="continue-story" type="TextureButton" parent="left-screen"]
 
 focus/ignore_mouse = false
@@ -490,7 +510,7 @@ margin/bottom = 40.0
 
 [node name="instructions" type="Label" parent="right-screen"]
 
-rect/scale = Vector2( 0.9, 0.9 )
+rect/scale = Vector2( 0.85, 0.85 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -511,15 +531,15 @@ max_lines_visible = -1
 
 [node name="controls" type="Label" parent="right-screen"]
 
-rect/scale = Vector2( 0.9, 0.9 )
+rect/scale = Vector2( 0.85, 0.85 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 1904.0
-margin/top = 242.0
-margin/right = 2385.0
-margin/bottom = 451.0
+margin/left = 1961.0
+margin/top = 243.0
+margin/right = 2442.0
+margin/bottom = 452.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0.0159454, 0.254561, 0.371094, 1 )
 text = "Move Left - A or Left Arrow
