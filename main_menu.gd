@@ -34,6 +34,7 @@ func _ready():
 	get_node("left-screen/story-1").set_opacity(0)
 	get_node("left-screen/story-2").set_opacity(0)
 	get_node("left-screen/story-3").set_opacity(0)
+	get_node("left-screen/story-4").set_opacity(0)
 	
 	# hardcode if elapsed time==9999 (default starting), then don't display anything; else display best time
 	if(elapsed == 9999):
@@ -90,7 +91,7 @@ func _on_continuestory_pressed():
 		t.start()
 		yield(t, "timeout")
 		#### change continue-story-text ###
-		get_node("left-screen/continue-story/continue-story-text").set_text("Cool A Fox....CAF!!!")
+		get_node("left-screen/continue-story/continue-story-text").set_text("What?!! Oh no!!")
 		story_counter+=1
 	elif(story_counter==2):
 		get_node("story_animation").play("story-2_appear")
@@ -102,7 +103,7 @@ func _on_continuestory_pressed():
 		t.start()
 		yield(t, "timeout")
 		#### change continue-story-text ###
-		get_node("left-screen/continue-story/continue-story-text").set_text("YEA!! KILLEMALL")
+		get_node("left-screen/continue-story/continue-story-text").set_text("Yeah! KILL EM ALL!")
 		story_counter+=1
 	elif(story_counter==3):
 		get_node("story_animation").play("story-3_appear")
@@ -114,7 +115,20 @@ func _on_continuestory_pressed():
 		t.start()
 		yield(t, "timeout")
 		#### change continue-story-text ###
-		get_node("left-screen/continue-story/continue-story-text").set_text("DESTROY!!")
+		get_node("left-screen/continue-story/continue-story-text").set_text("HECK YEAH!")
+		story_counter+=1
+		
+	elif(story_counter==4):
+		get_node("story_animation").play("story-4_appear")
+		##### timeout to change continue story button text #####
+		var t = Timer.new()
+		t.set_wait_time(3)
+		t.set_one_shot(true)
+		self.add_child(t)
+		t.start()
+		yield(t, "timeout")
+		#### change continue-story-text ###
+		get_node("left-screen/continue-story/continue-story-text").set_text("FOR THE CHAI!!!")
 		story_counter+=1
 	pass
 
@@ -146,6 +160,7 @@ func _on_left_right_pressed():
 	get_node("left-screen/story-1").set_opacity(0)
 	get_node("left-screen/story-2").set_opacity(0)
 	get_node("left-screen/story-3").set_opacity(0)
+	get_node("left-screen/story-4").set_opacity(0)
 	get_node("left-screen/continue-story/continue-story-text").set_text("Tell me a story!")
 
 
